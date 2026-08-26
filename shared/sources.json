@@ -1,4 +1,115 @@
 {
+  "rthk": {
+    "redirect": "rthk-local",
+    "name": "香港電台",
+    "column": "hongkong",
+    "home": "https://www.rthk.hk",
+    "color": "blue",
+    "interval": 600000,
+    "title": "本地"
+  },
+  "rthk-local": {
+    "name": "香港電台",
+    "column": "hongkong",
+    "home": "https://www.rthk.hk",
+    "color": "blue",
+    "interval": 600000,
+    "title": "本地"
+  },
+  "rthk-greaterchina": {
+    "name": "香港電台",
+    "column": "hongkong",
+    "home": "https://www.rthk.hk",
+    "color": "blue",
+    "interval": 600000,
+    "title": "兩岸"
+  },
+  "rthk-world": {
+    "name": "香港電台",
+    "column": "hongkong",
+    "home": "https://www.rthk.hk",
+    "color": "blue",
+    "interval": 600000,
+    "title": "國際"
+  },
+  "rthk-finance": {
+    "name": "香港電台",
+    "column": "hongkong",
+    "home": "https://www.rthk.hk",
+    "color": "blue",
+    "interval": 600000,
+    "title": "財經"
+  },
+  "rthk-sport": {
+    "name": "香港電台",
+    "column": "hongkong",
+    "home": "https://www.rthk.hk",
+    "color": "blue",
+    "interval": 600000,
+    "title": "體育"
+  },
+  "yahoohk": {
+    "name": "雅虎香港",
+    "column": "hongkong",
+    "home": "https://hk.news.yahoo.com",
+    "color": "purple",
+    "interval": 600000
+  },
+  "hk01": {
+    "name": "香港01",
+    "column": "hongkong",
+    "home": "https://www.hk01.com",
+    "color": "red",
+    "interval": 600000
+  },
+  "googlenews": {
+    "redirect": "googlenews-focus",
+    "name": "Google 新聞",
+    "column": "hongkong",
+    "home": "https://news.google.com",
+    "color": "green",
+    "interval": 600000,
+    "title": "焦點"
+  },
+  "googlenews-focus": {
+    "name": "Google 新聞",
+    "column": "hongkong",
+    "home": "https://news.google.com",
+    "color": "green",
+    "interval": 600000,
+    "title": "焦點"
+  },
+  "googlenews-business": {
+    "name": "Google 新聞",
+    "column": "hongkong",
+    "home": "https://news.google.com",
+    "color": "green",
+    "interval": 600000,
+    "title": "財經"
+  },
+  "googlenews-technology": {
+    "name": "Google 新聞",
+    "column": "hongkong",
+    "home": "https://news.google.com",
+    "color": "green",
+    "interval": 600000,
+    "title": "科技"
+  },
+  "googlenews-sports": {
+    "name": "Google 新聞",
+    "column": "hongkong",
+    "home": "https://news.google.com",
+    "color": "green",
+    "interval": 600000,
+    "title": "體育"
+  },
+  "hko": {
+    "name": "香港天文台",
+    "column": "hongkong",
+    "home": "https://www.hko.gov.hk",
+    "color": "teal",
+    "interval": 600000
+  },
   "v2ex": {
     "redirect": "v2ex-share",
     "name": "V2EX",

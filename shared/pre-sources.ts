@@ -13,6 +13,67 @@ const Time = {
 }
 
 export const originSources = {
+  "rthk": {
+    name: "香港電台",
+    column: "hongkong",
+    color: "blue",
+    home: "https://www.rthk.hk",
+    sub: {
+      local: {
+        title: "本地",
+      },
+      greaterchina: {
+        title: "兩岸",
+      },
+      world: {
+        title: "國際",
+      },
+      finance: {
+        title: "財經",
+      },
+      sport: {
+        title: "體育",
+      },
+    },
+  },
+  "yahoohk": {
+    name: "雅虎香港",
+    column: "hongkong",
+    color: "purple",
+    home: "https://hk.news.yahoo.com",
+  },
+  "hk01": {
+    name: "香港01",
+    column: "hongkong",
+    color: "red",
+    home: "https://www.hk01.com",
+  },
+  "googlenews": {
+    name: "Google 新聞",
+    column: "hongkong",
+    color: "green",
+    home: "https://news.google.com",
+    sub: {
+      focus: {
+        title: "焦點",
+      },
+      business: {
+        title: "財經",
+      },
+      technology: {
+        title: "科技",
+      },
+      sports: {
+        title: "體育",
+      },
+    },
+  },
+  "hko": {
+    name: "香港天文台",
+    column: "hongkong",
+    color: "teal",
+    home: "https://www.hko.gov.hk",
+  },
   "v2ex": {
     name: "V2EX",
     color: "slate",

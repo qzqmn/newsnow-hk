@@ -4,6 +4,9 @@ import { updatedSourceIds as _updatedSourceIds } from "./updated-sources"
 import type { ColumnID, HiddenColumnID, Metadata, SourceID } from "./types"
 
 export const columns = {
+  hongkong: {
+    zh: "香港",
+  },
   china: {
     zh: "国内",
   },
