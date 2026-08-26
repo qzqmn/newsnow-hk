@@ -2,11 +2,17 @@ import process from "node:process"
 import { SignJWT } from "jose"
 import { UserTable } from "#/database/user"
 
+const trimBom = (s: string) => s?.replace(/^\uFEFF/, "") || ""
+
 export default defineEventHandler(async (event) => {
   const db = useDatabase()
   const userTable = db ? new UserTable(db) : undefined
   if (!userTable) throw new Error("db is not defined")
   if (process.env.INIT_TABLE !== "false") await userTable.init()
+
+  const clientId = trimBom(process.env.G_CLIENT_ID)
+  const clientSecret = trimBom(process.env.G_CLIENT_SECRET)
+  const jwtSecret = trimBom(process.env.JWT_SECRET)
 
   const response: {
     access_token: string
@@ -17,8 +23,8 @@ export default defineEventHandler(async (event) => {
     {
       method: "POST",
       body: {
-        client_id: process.env.G_CLIENT_ID,
-        client_secret: process.env.G_CLIENT_SECRET,
+        client_id: clientId,
+        client_secret: clientSecret,
         code: getQuery(event).code,
       },
       headers: {
@@ -37,7 +43,6 @@ export default defineEventHandler(async (event) => {
     headers: {
       "Accept": "application/vnd.github+json",
       "Authorization": `token ${response.access_token}`,
-      // 必须有 user-agent，在 cloudflare worker 会报错
       "User-Agent": "NewsNow App",
     },
   })
@@ -51,14 +56,7 @@ export default defineEventHandler(async (event) => {
   })
     .setExpirationTime("60d")
     .setProtectedHeader({ alg: "HS256" })
-    .sign(new TextEncoder().encode(process.env.JWT_SECRET!))
-
-  // nitro 有 bug，在 cloudflare 里没法 set cookie
-  // seconds
-  // const maxAge = 60 * 24 * 60 * 60
-  // setCookie(event, "user_jwt", jwtToken, { maxAge })
-  // setCookie(event, "user_avatar", userInfo.avatar_url, { maxAge })
-  // setCookie(event, "user_name", userInfo.name, { maxAge })
+    .sign(new TextEncoder().encode(jwtSecret))
 
   const params = new URLSearchParams({
     login: "github",

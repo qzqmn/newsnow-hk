@@ -1,10 +1,15 @@
 import process from "node:process"
 import { jwtVerify } from "jose"
 
+const trimBom = (s: string) => s?.replace(/^\uFEFF/, "") || ""
+
 export default defineEventHandler(async (event) => {
   const url = getRequestURL(event)
   if (!url.pathname.startsWith("/api")) return
-  if (["JWT_SECRET", "G_CLIENT_ID", "G_CLIENT_SECRET"].find(k => !process.env[k])) {
+  const jwtSecret = trimBom(process.env.JWT_SECRET)
+  const gClientId = trimBom(process.env.G_CLIENT_ID)
+  const gClientSecret = trimBom(process.env.G_CLIENT_SECRET)
+  if (!jwtSecret || !gClientId || !gClientSecret) {
     event.context.disabledLogin = true
     if (["/api/s", "/api/proxy", "/api/latest"].every(p => !url.pathname.startsWith(p)))
       throw createError({ statusCode: 506, message: "Server not configured, disable login" })
@@ -13,7 +18,7 @@ export default defineEventHandler(async (event) => {
       const token = getHeader(event, "Authorization")?.replace(/Bearer\s*/, "")?.trim()
       if (token) {
         try {
-          const { payload } = await jwtVerify(token, new TextEncoder().encode(process.env.JWT_SECRET)) as { payload?: { id: string, type: string } }
+          const { payload } = await jwtVerify(token, new TextEncoder().encode(jwtSecret)) as { payload?: { id: string, type: string } }
           if (payload?.id) {
             event.context.user = {
               id: payload.id,
