@@ -110,6 +110,202 @@
     "color": "teal",
     "interval": 600000
   },
+  "mingpao": {
+    "redirect": "mingpao-hongkong",
+    "name": "明報",
+    "column": "hongkong",
+    "home": "https://news.mingpao.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "港聞"
+  },
+  "mingpao-hongkong": {
+    "name": "明報",
+    "column": "hongkong",
+    "home": "https://news.mingpao.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "港聞"
+  },
+  "mingpao-china": {
+    "name": "明報",
+    "column": "hongkong",
+    "home": "https://news.mingpao.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "兩岸"
+  },
+  "mingpao-international": {
+    "name": "明報",
+    "column": "hongkong",
+    "home": "https://news.mingpao.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "國際"
+  },
+  "mingpao-finance": {
+    "name": "明報",
+    "column": "hongkong",
+    "home": "https://news.mingpao.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "財經"
+  },
+  "mingpao-sports": {
+    "name": "明報",
+    "column": "hongkong",
+    "home": "https://news.mingpao.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "體育"
+  },
+  "mingpao-entertainment": {
+    "name": "明報",
+    "column": "hongkong",
+    "home": "https://news.mingpao.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "娛樂"
+  },
+  "scmp": {
+    "redirect": "scmp-hongkong",
+    "name": "南華早報",
+    "column": "hongkong",
+    "home": "https://www.scmp.com",
+    "color": "indigo",
+    "interval": 600000,
+    "title": "香港"
+  },
+  "scmp-hongkong": {
+    "name": "南華早報",
+    "column": "hongkong",
+    "home": "https://www.scmp.com",
+    "color": "indigo",
+    "interval": 600000,
+    "title": "香港"
+  },
+  "scmp-china": {
+    "name": "南華早報",
+    "column": "hongkong",
+    "home": "https://www.scmp.com",
+    "color": "indigo",
+    "interval": 600000,
+    "title": "中國"
+  },
+  "scmp-asia": {
+    "name": "南華早報",
+    "column": "hongkong",
+    "home": "https://www.scmp.com",
+    "color": "indigo",
+    "interval": 600000,
+    "title": "亞洲"
+  },
+  "scmp-opinion": {
+    "name": "南華早報",
+    "column": "hongkong",
+    "home": "https://www.scmp.com",
+    "color": "indigo",
+    "interval": 600000,
+    "title": "評論"
+  },
+  "scmp-tech": {
+    "name": "南華早報",
+    "column": "hongkong",
+    "home": "https://www.scmp.com",
+    "color": "indigo",
+    "interval": 600000,
+    "title": "科技"
+  },
+  "hket": {
+    "redirect": "hket-hongkong",
+    "name": "經濟日報",
+    "column": "hongkong",
+    "home": "https://www.hket.com",
+    "color": "green",
+    "interval": 600000,
+    "title": "香港"
+  },
+  "hket-hongkong": {
+    "name": "經濟日報",
+    "column": "hongkong",
+    "home": "https://www.hket.com",
+    "color": "green",
+    "interval": 600000,
+    "title": "香港"
+  },
+  "hket-finance": {
+    "name": "經濟日報",
+    "column": "finance",
+    "home": "https://www.hket.com",
+    "color": "green",
+    "interval": 600000,
+    "title": "財經"
+  },
+  "hket-china": {
+    "name": "經濟日報",
+    "column": "hongkong",
+    "home": "https://www.hket.com",
+    "color": "green",
+    "interval": 600000,
+    "title": "中國"
+  },
+  "hket-international": {
+    "name": "經濟日報",
+    "column": "hongkong",
+    "home": "https://www.hket.com",
+    "color": "green",
+    "interval": 600000,
+    "title": "國際"
+  },
+  "hket-tech": {
+    "name": "經濟日報",
+    "column": "hongkong",
+    "home": "https://www.hket.com",
+    "color": "green",
+    "interval": 600000,
+    "title": "科技"
+  },
+  "lihkg": {
+    "redirect": "lihkg-chat",
+    "name": "連登",
+    "column": "hongkong",
+    "home": "https://lihkg.com",
+    "color": "orange",
+    "interval": 600000,
+    "title": "吹水台"
+  },
+  "lihkg-chat": {
+    "name": "連登",
+    "column": "hongkong",
+    "home": "https://lihkg.com",
+    "color": "orange",
+    "interval": 600000,
+    "title": "吹水台"
+  },
+  "lihkg-current": {
+    "name": "連登",
+    "column": "hongkong",
+    "home": "https://lihkg.com",
+    "color": "orange",
+    "interval": 600000,
+    "title": "時事台"
+  },
+  "lihkg-hobby": {
+    "name": "連登",
+    "column": "hongkong",
+    "home": "https://lihkg.com",
+    "color": "orange",
+    "interval": 600000,
+    "title": "興趣台"
+  },
+  "lihkg-sport": {
+    "name": "連登",
+    "column": "hongkong",
+    "home": "https://lihkg.com",
+    "color": "orange",
+    "interval": 600000,
+    "title": "體育台"
+  },
   "v2ex": {
     "redirect": "v2ex-share",
     "name": "V2EX",

@@ -74,6 +74,102 @@ export const originSources = {
     color: "teal",
     home: "https://www.hko.gov.hk",
   },
+  "mingpao": {
+    name: "明報",
+    column: "hongkong",
+    color: "blue",
+    home: "https://news.mingpao.com",
+    sub: {
+      hongkong: {
+        title: "港聞",
+      },
+      china: {
+        title: "兩岸",
+      },
+      international: {
+        title: "國際",
+      },
+      finance: {
+        title: "財經",
+      },
+      sports: {
+        title: "體育",
+      },
+      entertainment: {
+        title: "娛樂",
+      },
+    },
+  },
+  "scmp": {
+    name: "南華早報",
+    column: "hongkong",
+    color: "indigo",
+    home: "https://www.scmp.com",
+    sub: {
+      hongkong: {
+        title: "香港",
+      },
+      china: {
+        title: "中國",
+      },
+      asia: {
+        title: "亞洲",
+      },
+      opinion: {
+        title: "評論",
+      },
+      tech: {
+        title: "科技",
+      },
+    },
+  },
+  "hket": {
+    name: "經濟日報",
+    column: "finance",
+    color: "green",
+    home: "https://www.hket.com",
+    sub: {
+      hongkong: {
+        title: "香港",
+        column: "hongkong",
+      },
+      finance: {
+        title: "財經",
+      },
+      china: {
+        title: "中國",
+        column: "hongkong",
+      },
+      international: {
+        title: "國際",
+        column: "hongkong",
+      },
+      tech: {
+        title: "科技",
+        column: "hongkong",
+      },
+    },
+  },
+  "lihkg": {
+    name: "連登",
+    column: "hongkong",
+    color: "orange",
+    home: "https://lihkg.com",
+    sub: {
+      chat: {
+        title: "吹水台",
+      },
+      current: {
+        title: "時事台",
+      },
+      hobby: {
+        title: "興趣台",
+      },
+      sport: {
+        title: "體育台",
+      },
+    },
+  },
   "v2ex": {
     name: "V2EX",
     color: "slate",
