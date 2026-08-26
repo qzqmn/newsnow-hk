@@ -216,55 +216,6 @@
     "interval": 600000,
     "title": "科技"
   },
-  "hket": {
-    "redirect": "hket-hongkong",
-    "name": "經濟日報",
-    "column": "hongkong",
-    "home": "https://www.hket.com",
-    "color": "green",
-    "interval": 600000,
-    "title": "香港"
-  },
-  "hket-hongkong": {
-    "name": "經濟日報",
-    "column": "hongkong",
-    "home": "https://www.hket.com",
-    "color": "green",
-    "interval": 600000,
-    "title": "香港"
-  },
-  "hket-finance": {
-    "name": "經濟日報",
-    "column": "finance",
-    "home": "https://www.hket.com",
-    "color": "green",
-    "interval": 600000,
-    "title": "財經"
-  },
-  "hket-china": {
-    "name": "經濟日報",
-    "column": "hongkong",
-    "home": "https://www.hket.com",
-    "color": "green",
-    "interval": 600000,
-    "title": "中國"
-  },
-  "hket-international": {
-    "name": "經濟日報",
-    "column": "hongkong",
-    "home": "https://www.hket.com",
-    "color": "green",
-    "interval": 600000,
-    "title": "國際"
-  },
-  "hket-tech": {
-    "name": "經濟日報",
-    "column": "hongkong",
-    "home": "https://www.hket.com",
-    "color": "green",
-    "interval": 600000,
-    "title": "科技"
-  },
   "lihkg": {
     "redirect": "lihkg-chat",
     "name": "連登",
@@ -305,6 +256,48 @@
     "color": "orange",
     "interval": 600000,
     "title": "體育台"
+  },
+  "hkfp": {
+    "name": "Hong Kong Free Press",
+    "column": "hongkong",
+    "home": "https://www.hongkongfp.com",
+    "color": "blue",
+    "interval": 600000
+  },
+  "orientalsunday": {
+    "name": "東方新地",
+    "column": "hongkong",
+    "home": "https://orientalsunday.hk",
+    "color": "pink",
+    "interval": 600000
+  },
+  "fintechnews": {
+    "name": "Fintech News HK",
+    "column": "finance",
+    "home": "https://fintechnews.hk",
+    "color": "cyan",
+    "interval": 600000
+  },
+  "edigest": {
+    "name": "經濟一週",
+    "column": "finance",
+    "home": "https://www.edigest.hk",
+    "color": "green",
+    "interval": 600000
+  },
+  "weekendhk": {
+    "name": "新假期",
+    "column": "hongkong",
+    "home": "https://weekendhk.com",
+    "color": "yellow",
+    "interval": 600000
+  },
+  "unwire": {
+    "name": "unwire",
+    "column": "tech",
+    "home": "https://www.unwire.hk",
+    "color": "teal",
+    "interval": 600000
   },
   "v2ex": {
     "redirect": "v2ex-share",

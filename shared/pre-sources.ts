@@ -123,33 +123,7 @@ export const originSources = {
       },
     },
   },
-  "hket": {
-    name: "經濟日報",
-    column: "finance",
-    color: "green",
-    home: "https://www.hket.com",
-    sub: {
-      hongkong: {
-        title: "香港",
-        column: "hongkong",
-      },
-      finance: {
-        title: "財經",
-      },
-      china: {
-        title: "中國",
-        column: "hongkong",
-      },
-      international: {
-        title: "國際",
-        column: "hongkong",
-      },
-      tech: {
-        title: "科技",
-        column: "hongkong",
-      },
-    },
-  },
+
   "lihkg": {
     name: "連登",
     column: "hongkong",
@@ -170,6 +144,45 @@ export const originSources = {
       },
     },
   },
+  "hkfp": {
+    name: "Hong Kong Free Press",
+    column: "hongkong",
+    color: "blue",
+    home: "https://www.hongkongfp.com",
+  },
+
+  "orientalsunday": {
+    name: "東方新地",
+    column: "hongkong",
+    color: "pink",
+    home: "https://orientalsunday.hk",
+  },
+
+  "fintechnews": {
+    name: "Fintech News HK",
+    column: "finance",
+    color: "cyan",
+    home: "https://fintechnews.hk",
+  },
+  "edigest": {
+    name: "經濟一週",
+    column: "finance",
+    color: "green",
+    home: "https://www.edigest.hk",
+  },
+  "weekendhk": {
+    name: "新假期",
+    column: "hongkong",
+    color: "yellow",
+    home: "https://weekendhk.com",
+  },
+  "unwire": {
+    name: "unwire",
+    column: "tech",
+    color: "teal",
+    home: "https://www.unwire.hk",
+  },
+
   "v2ex": {
     name: "V2EX",
     color: "slate",
